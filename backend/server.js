@@ -3,12 +3,12 @@
  * Boots Express app + Socket.IO and listens on the configured PORT.
  */
 
-require('dotenv').config();
-const http = require('http');
-const app = require('./src/app');
-const { initSeatSocket } = require('./src/sockets/seatSocket');
+require("dotenv").config();
+const http = require("http");
+const app = require("./src/app");
+const { initSeatSocket } = require("./src/sockets/seatSocket");
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5500;
 
 // Create HTTP server and attach Socket.IO
 const server = http.createServer(app);
